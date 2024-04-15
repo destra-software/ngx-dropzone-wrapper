@@ -1,5 +1,3 @@
-import { Dropzone } from 'dropzone';
-
 import { PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { NgZone, Inject, Optional, ElementRef, Renderer2, Directive,
@@ -15,6 +13,7 @@ import { DROPZONE_CONFIG, DropzoneConfig, DropzoneConfigInterface,
 })
 export class DropzoneDirective implements OnInit, OnDestroy, DoCheck, OnChanges {
   private instance: any;
+  private Dropzone: any;
 
   private configDiff: KeyValueDiffer<string, any> | null = null;
 
@@ -61,9 +60,10 @@ export class DropzoneDirective implements OnInit, OnDestroy, DoCheck, OnChanges 
     private differs: KeyValueDiffers, @Inject(PLATFORM_ID) private platformId: Object,
     @Optional() @Inject(DROPZONE_CONFIG) private defaults: DropzoneConfigInterface)
   {
-    const dz = Dropzone;
-
-    dz.autoDiscover = false;
+    if (isPlatformBrowser(this.platformId)) {
+      this.Dropzone = require('dropzone');
+      this.Dropzone.autoDiscover = false;
+    }
   }
 
   ngOnInit(): void {
@@ -82,7 +82,7 @@ export class DropzoneDirective implements OnInit, OnDestroy, DoCheck, OnChanges 
       (params.maxFiles === 1) ? 'dz-multiple' : 'dz-single');
 
     this.zone.runOutsideAngular(() => {
-      this.instance = new Dropzone(this.elementRef.nativeElement, params);
+      this.instance = new this.Dropzone(this.elementRef.nativeElement, params);
     });
 
     if (this.disabled) {
