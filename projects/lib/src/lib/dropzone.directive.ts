@@ -61,8 +61,10 @@ export class DropzoneDirective implements OnInit, OnDestroy, DoCheck, OnChanges 
     @Optional() @Inject(DROPZONE_CONFIG) private defaults: DropzoneConfigInterface)
   {
     if (isPlatformBrowser(this.platformId)) {
-      this.Dropzone = require('dropzone');
-      this.Dropzone.autoDiscover = false;
+      import('dropzone').then(dropzone => {
+        this.Dropzone = dropzone;
+        this.Dropzone.autoDiscover = false;
+      });
     }
   }
 
