@@ -20,7 +20,6 @@ import {
   Renderer2,
   SimpleChanges
 } from '@angular/core'
-import { Dropzone } from 'dropzone'
 import {
   DROPZONE_CONFIG,
   DropzoneConfig,
@@ -28,6 +27,7 @@ import {
   DropzoneEvent,
   DropzoneEvents
 } from './dropzone.interfaces'
+import Dropzone from "dropzone";
 
 @Directive({
   selector: '[dropzone]',
