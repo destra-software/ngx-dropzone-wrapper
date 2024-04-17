@@ -4,7 +4,7 @@ dropzone {
   height: auto;
 }
 
-dropzone.flex {
+dropzone[fxflex] {
   display: flex;
   flex-direction: inherit;
   min-width: 0;
@@ -14,7 +14,7 @@ dropzone.flex {
   -webkit-box-orient: inherit;
 }
 
-dropzone.flex > .dropzone.dz-wrapper {
+dropzone[fxflex] > .dropzone.dz-wrapper {
   flex: 1 1 auto;
   min-width: 0;
   min-height: 0;
@@ -22,7 +22,7 @@ dropzone.flex > .dropzone.dz-wrapper {
   -webkit-box-flex: 1;
 }
 
-dropzone.flex {
+dropzone[fxlayout] {
   align-items: inherit;
   align-content: inherit;
   justify-content: inherit;
@@ -31,7 +31,7 @@ dropzone.flex {
   -webkit-box-pack: inherit;
 }
 
-dropzone.flex > .dropzone.dz-wrapper.dz-single {
+dropzone[fxlayout] > .dropzone.dz-wrapper.dz-single {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@ dropzone.flex > .dropzone.dz-wrapper.dz-single {
   -webkit-box-pack: center;
 }
 
-dropzone.flex > .dropzone.dz-wrapper.dz-multiple {
+dropzone[fxlayout] > .dropzone.dz-wrapper.dz-multiple {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
