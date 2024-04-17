@@ -18,7 +18,7 @@
     "url": "https://github.com/zefoy/ngx-dropzone-wrapper.git"
   },
   "dependencies": {
-    "dropzone": "https://github.com/destra-software/dropzone.git"
+    "dropzone": "~6.0.0-beta.2"
   },
   "devDependencies": {
     "@angular/cdk": "~14.2.0",
