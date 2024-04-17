@@ -11,6 +11,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "esnext",
+    "esModuleInterop": true,
     "declaration": true,
     "inlineSources": true,
     "stripInternal": true,
