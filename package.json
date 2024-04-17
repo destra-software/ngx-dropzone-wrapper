@@ -18,11 +18,12 @@
     "url": "https://github.com/zefoy/ngx-dropzone-wrapper.git"
   },
   "dependencies": {
-    "dropzone": "https://github.com/destra-software/dropzone.git"
+    "dropzone": "6.0.0-beta.2"
   },
   "devDependencies": {
-
     "@angular/cdk": "~14.2.0",
+    "@angular/cli": "14.2.0",
+    "@angular/compiler-cli": "14.2.0",
     "@angular/common": "~14.2.0",
     "@angular/compiler": "~14.2.0",
     "@angular/core": "~14.2.0",
@@ -30,19 +31,15 @@
     "@angular/platform-browser": "~14.2.0",
     "@angular/platform-browser-dynamic": "~14.2.0",
     "core-js": "^3.25.3",
-    "dropzone": "https://github.com/destra-software/dropzone.git",
     "rxjs": "^7.5.7",
     "stylelint": "^14.13.0",
-
     "@angular-devkit/architect": "^0.1402.3",
-    "@angular-devkit/build-angular": "^14.2.3",
-    "@angular-eslint/builder": "14.1.2",
-    "@angular-eslint/eslint-plugin": "14.1.2",
-    "@angular-eslint/eslint-plugin-template": "14.1.2",
-    "@angular-eslint/schematics": "14.1.2",
-    "@angular-eslint/template-parser": "14.1.2",
-    "@angular/cli": "^14.2.3",
-    "@angular/compiler-cli": "^14.2.3",
+    "@angular-devkit/build-angular": "~14.2.0",
+    "@angular-eslint/builder": "~14.2.0",
+    "@angular-eslint/eslint-plugin": "~14.2.0",
+    "@angular-eslint/eslint-plugin-template": "~14.2.0",
+    "@angular-eslint/schematics": "~14.2.0",
+    "@angular-eslint/template-parser": "~14.2.0",
     "@types/node": "~16.11.7",
     "@typescript-eslint/eslint-plugin": "5.38.0",
     "@typescript-eslint/parser": "5.38.0",

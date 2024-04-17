@@ -14,7 +14,8 @@ import { DropzoneEvent, DropzoneEvents, DropzoneConfigInterface } from './dropzo
   templateUrl: './dropzone.component.html',
   styleUrls: [
     './dropzone.component.css',
-    '../../node_modules/dropzone/dist/min/dropzone.min.css'
+    '../../node_modules/dropzone/dist/dropzone.css',
+    '../../node_modules/dropzone/dist/basic.css'
   ],
   encapsulation: ViewEncapsulation.None
 })
