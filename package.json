@@ -41,7 +41,7 @@
     "@angular/platform-browser": "^14.2.3",
     "@angular/platform-browser-dynamic": "^14.2.3",
     "core-js": "^3.25.3",
-    "dropzone": "^5.9.3",
+    "dropzone": "https://github.com/destra-software/dropzone.git",
     "rxjs": "^7.5.7",
     "stylelint": "^14.13.0"
   },
