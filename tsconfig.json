@@ -4,29 +4,34 @@
     "baseUrl": "./",
     "outDir": "./dist",
     "sourceMap": true,
-    "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
     "module": "esnext",
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
+    "target": "esnext",
+    "declaration": true,
+    "inlineSources": true,
+    "stripInternal": true,
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
       "es2020",
       "dom"
-    ],
-    "paths": {
-      "ngx-dropzone-wrapper": [
-        "./projects/lib/src/public-api.ts"
-      ]
-    }
+    ]
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  }
+    "strictInjectionParameters": true,
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "enableResourceInlining": true,
+    "compilationMode": "partial"
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
 }

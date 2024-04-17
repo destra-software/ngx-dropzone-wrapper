@@ -18,6 +18,10 @@
     "url": "https://github.com/zefoy/ngx-dropzone-wrapper.git"
   },
   "dependencies": {
+    "dropzone": "https://github.com/destra-software/dropzone.git"
+  },
+  "devDependencies": {
+
     "@angular/cdk": "~14.2.0",
     "@angular/common": "~14.2.0",
     "@angular/compiler": "~14.2.0",
@@ -28,9 +32,8 @@
     "core-js": "^3.25.3",
     "dropzone": "https://github.com/destra-software/dropzone.git",
     "rxjs": "^7.5.7",
-    "stylelint": "^14.13.0"
-  },
-  "devDependencies": {
+    "stylelint": "^14.13.0",
+
     "@angular-devkit/architect": "^0.1402.3",
     "@angular-devkit/build-angular": "^14.2.3",
     "@angular-eslint/builder": "14.1.2",
