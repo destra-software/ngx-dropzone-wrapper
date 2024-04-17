@@ -1,5 +1,5 @@
-export { DropzoneComponent } from './lib/dropzone.component';
-export { DropzoneDirective } from './lib/dropzone.directive';
+export { DropzoneComponent } from './lib/dropzone.component'
+export { DropzoneDirective } from './lib/dropzone.directive'
 
 export {
   DROPZONE_CONFIG,
@@ -19,6 +19,6 @@ export {
   DropzoneRenameFileFunction,
   DropzoneTransformFileFunction,
   DropzoneChunksUploadedFunction
-} from './lib/dropzone.interfaces';
+} from './lib/dropzone.interfaces'
 
-export { DropzoneModule } from './lib/dropzone.module';
+export { DropzoneModule } from './lib/dropzone.module'
