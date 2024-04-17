@@ -8,15 +8,15 @@
   "projects": {
     "lib": {
       "projectType": "library",
-      "root": "projects/lib",
-      "sourceRoot": "projects/lib/src",
+      "root": "",
+      "sourceRoot": "src/",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/lib/tsconfig.json",
-            "project": "projects/lib/ng-package.json"
+            "tsConfig": "./tsconfig.json",
+            "project": "./ng-package.json"
           },
           "configurations": {
             "production": {
@@ -27,8 +27,8 @@
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/lib/src/**/*.ts",
-              "projects/lib/src/**/*.html"
+              "/src/**/*.ts",
+              "/src/**/*.html"
             ]
           }
         }
