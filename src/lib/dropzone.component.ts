@@ -20,7 +20,7 @@ import {DropzoneConfigInterface, DropzoneEvent, DropzoneEvents} from './dropzone
   templateUrl: './dropzone.component.html',
   styleUrls: [
     './dropzone.component.scss',
-    '../../node_modules/dropzone/dist/dropzone.css'
+    '../../node_modules/dropzone/src/dropzone.scss'
   ],
   encapsulation: ViewEncapsulation.None
 })

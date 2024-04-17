@@ -1751,7 +1751,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/dropzone@^5.7.7":
+"@types/dropzone@^5.7.8":
   version "5.7.8"
   resolved "https://registry.yarnpkg.com/@types/dropzone/-/dropzone-5.7.8.tgz#3a4a03b54d15cb07bfd40dc55626c77c43a5d2fb"
   integrity sha512-+L0/KRMuB8cIiCe5AfF448nGMpY+gHiSakqsqT3plEIfgqSV+gcVs1AkngM9zZG8hi6lgMxy4iYEuGXXmqjYvg==
@@ -3584,10 +3584,9 @@ domutils@^2.8.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-dropzone@~6.0.0-beta.2:
+"dropzone@https://github.com/destra-software/dropzone.git#v6":
   version "6.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/dropzone/-/dropzone-6.0.0-beta.2.tgz#098be8fa84bdc08674cf0b74f4c889e2679083d6"
-  integrity sha512-k44yLuFFhRk53M8zP71FaaNzJYIzr99SKmpbO/oZKNslDjNXQsBTdfLs+iONd0U0L94zzlFzRnFdqbLcs7h9fQ==
+  resolved "https://github.com/destra-software/dropzone.git#5936d90702e237ee6fbab56ef58d856b1263b964"
   dependencies:
     "@swc/helpers" "^0.2.13"
     just-extend "^5.0.0"

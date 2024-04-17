@@ -18,7 +18,7 @@
     "url": "https://github.com/zefoy/ngx-dropzone-wrapper.git"
   },
   "dependencies": {
-    "dropzone": "~6.0.0-beta.2"
+    "dropzone": "https://github.com/destra-software/dropzone.git#v6"
   },
   "devDependencies": {
     "@angular/cdk": "~14.2.0",
@@ -43,7 +43,7 @@
     "@types/node": "~16.11.7",
     "@typescript-eslint/eslint-plugin": "5.38.0",
     "@typescript-eslint/parser": "5.38.0",
-    "@types/dropzone": "^5.7.7",
+    "@types/dropzone": "^5.7.8",
     "codelyzer": "^6.0.2",
     "cpx": "^1.5.0",
     "deploy-to-git": "^0.4.1",
