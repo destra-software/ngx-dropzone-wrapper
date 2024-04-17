@@ -20,7 +20,7 @@ import {
   Renderer2,
   SimpleChanges
 } from '@angular/core'
-import Dropzone from 'dropzone'
+import { Dropzone } from 'dropzone'
 import {
   DROPZONE_CONFIG,
   DropzoneConfig,
