@@ -8,38 +8,23 @@
   "scripts": {
     "ng": "ng",
     "lint": "ng lint",
-    "start": "ng serve app",
     "build": "ng build lib",
     "deploy": "deploy-to-git",
     "prepare": "ng build lib --configuration production",
-    "publish": "npm publish ./dist/lib",
-    "predeploy": "rimraf ./dist/app && mkdirp ./dist/app"
+    "publish": "npm publish ./dist/lib"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/zefoy/ngx-dropzone-wrapper.git"
   },
-  "config": {
-    "deployToGit": {
-      "repository": "git@github.com:zefoy/ngx-dropzone-wrapper.git",
-      "branch": "gh-pages",
-      "folder": "dist/app",
-      "script": "ng build app --configuration production --base-href=ngx-dropzone-wrapper --delete-output-path=false",
-      "commit": "Publishing $npm_package_version",
-      "user": {
-        "name": "ZEF Devel",
-        "email": "devel@zef.fi"
-      }
-    }
-  },
   "dependencies": {
-    "@angular/cdk": "^14.2.3",
-    "@angular/common": "^14.2.3",
-    "@angular/compiler": "^14.2.3",
-    "@angular/core": "^14.2.3",
-    "@angular/flex-layout": "14.0.0-beta.40",
-    "@angular/platform-browser": "^14.2.3",
-    "@angular/platform-browser-dynamic": "^14.2.3",
+    "@angular/cdk": "~14.2.0",
+    "@angular/common": "~14.2.0",
+    "@angular/compiler": "~14.2.0",
+    "@angular/core": "~14.2.0",
+    "@angular/flex-layout": "~14.0.0-beta.41",
+    "@angular/platform-browser": "~14.2.0",
+    "@angular/platform-browser-dynamic": "~14.2.0",
     "core-js": "^3.25.3",
     "dropzone": "https://github.com/destra-software/dropzone.git",
     "rxjs": "^7.5.7",
