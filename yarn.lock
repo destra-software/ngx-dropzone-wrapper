@@ -3586,7 +3586,7 @@ domutils@^2.8.0:
 
 "dropzone@https://github.com/destra-software/dropzone.git#v6":
   version "6.0.0-beta.2"
-  resolved "https://github.com/destra-software/dropzone.git#5936d90702e237ee6fbab56ef58d856b1263b964"
+  resolved "https://github.com/destra-software/dropzone.git#5bf5172edca4a1ce965a50d1ee47a7280c91159d"
   dependencies:
     "@swc/helpers" "^0.2.13"
     just-extend "^5.0.0"

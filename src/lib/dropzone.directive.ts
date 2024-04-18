@@ -27,7 +27,8 @@ import {
   DropzoneEvent,
   DropzoneEvents
 } from './dropzone.interfaces'
-import Dropzone from "dropzone";
+// @ts-ignore
+import { Dropzone } from "dropzone";
 
 @Directive({
   selector: '[dropzone]',
