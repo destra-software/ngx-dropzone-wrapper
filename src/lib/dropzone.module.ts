@@ -1,7 +1,7 @@
-import { CommonModule } from '@angular/common'
-import { NgModule } from '@angular/core'
-import { DropzoneComponent } from './dropzone.component'
-import { DropzoneDirective } from './dropzone.directive'
+import {CommonModule} from '@angular/common';
+import {NgModule} from '@angular/core';
+import {DropzoneComponent} from './dropzone.component';
+import {DropzoneDirective} from './dropzone.directive';
 
 @NgModule({
   declarations: [
@@ -16,4 +16,5 @@ import { DropzoneDirective } from './dropzone.directive'
     DropzoneDirective
   ]
 })
-export class DropzoneModule { }
+export class DropzoneModule {
+}
